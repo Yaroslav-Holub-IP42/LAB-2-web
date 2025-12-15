@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Головне Меню</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+
+    body {
+      margin: 0;
+      height: 100vh; 
+      
+      display: flex;
+      justify-content: center; 
+      align-items: center;    
+      
+      background-image: url('img/backgorund.png'); 
+      background-color: #2b4a3c; 
+      background-size: cover;
+      background-position: center;
+      font-family: 'Cinzel Decorative', cursive;
+    }
+
+
+    .menu-container {
+      display: flex;
+      flex-direction: column; 
+      gap: 25px; 
+      
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(5px); /* Ефект розмиття фону */
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .menu-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(45deg, #1e5c26, #228B22);
+      padding: 15px 40px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 50px; 
+      border: 2px solid #a4dfa8;
+      text-align: center;
+      min-width: 250px;
+      
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+
+    .menu-btn:hover {
+      transform: scale(1.05) translateY(-3px); 
+      background: linear-gradient(45deg, #228B22, #32cd32);
+      box-shadow: 0 8px 25px rgba(50, 205, 50, 0.6); 
+    }
+
+
+    .menu-btn:active {
+      transform: scale(0.98);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="menu-container">
+    <a href="clear_html.html" class="menu-btn">Без використання Flexbox CSS та Grid CSS</a>
+    
+    <a href="grid.html" class="menu-btn">З допомогою Grid CSS</a>
+    
+    <a href="flexbox.html" class="menu-btn">З допомогою Flexbox CSS</a>
+  </div>
+
+</body>
+</html>

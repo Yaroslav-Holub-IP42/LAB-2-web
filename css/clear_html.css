@@ -1,0 +1,183 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cinzel Decorative', cursive;
+      background-image: url('img/backgorund.png'); 
+      background-color: #2b4a3c; 
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #000;
+    }
+
+    * {
+      box-sizing: border-box; 
+    }
+
+
+    .glass-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      position: relative;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    
+    .green-bg {
+        background-color: rgba(223, 238, 218, 0.9); 
+    }
+
+    .background-small {
+       background-image: url('img/backgorund-small.png');
+       background-size: cover;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .nav-btn {
+        display: inline-block;
+        padding: 8px 15px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 20px;
+        background-color: #1e5c26;
+        color: #fff; 
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 14px;
+    }
+    
+    select.nav-btn {
+        appearance: none; 
+        -webkit-appearance: none;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+    .x, .y {
+      position: absolute;
+      right: 15px;
+      background: #228B22;       
+      color: red;              
+      border: none;              
+      padding: 5px 15px;         
+      font-size: clamp(14px, 2vw, 24px);
+      border-radius: 9999px;     
+      font-weight: bold; 
+      top: 25%;
+    }
+
+
+
+    h1 {
+        margin: 0;
+        font-size: clamp(18px, 2.5vw, 28px);
+        text-align: center;
+    }
+    
+    p {
+        font-size: clamp(14px, 1.2vw, 18px);
+        line-height: 1.5;
+        margin: 0;
+    }
+    @media screen and (min-width: 1024px) {
+        
+        body {
+            height: 100vh;
+            overflow: hidden; 
+            padding: 1vh 1vw; 
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .p-1 { padding: 0.5vh 0.5vw; height: 100%; width: 100%; float: left; }
+
+        
+        .row-header, .row-footer {
+            width: 100%;
+            height: 12%; 
+            float: left;
+            position: relative;
+        }
+        
+        .row-middle {
+            width: 100%;
+            height: 76%;
+            float: left;
+        }
+
+        .col-right {
+            width: 25%;
+            height: 100%;
+            float: right; 
+        }
+
+
+        .col-left-wrapper {
+            width: 75%;
+            height: 100%;
+            float: left;
+        }
+
+        .left-top-split {
+            width: 100%;
+            height: 75%;
+            float: left;
+        }
+
+        .left-bottom-bar {
+            width: 100%;
+            height: 25%;
+            float: left;
+        }
+
+        .sub-col-left {
+            width: 35%;
+            height: 100%;
+            float: left;
+        }
+
+        .sub-col-center {
+            width: 65%;
+            height: 100%;
+            float: left;
+        }
+
+        .box-title {
+            width: 100%;
+            height: 20%;
+            float: left;
+        }
+
+        .box-content {
+            width: 100%;
+            height: 80%;
+            float: left;
+        }
+        
+        .flex-center {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+        .center-cell {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding: 10px;
+        }
+        .align-top {
+            vertical-align: top;
+            text-align: left;
+        }
+    }
